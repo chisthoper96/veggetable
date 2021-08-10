@@ -1,0 +1,18 @@
+<h1 class = "p-4">Tenemos para ti ...</h1>
+
+<div class="container d-flex">
+  <% @recipes.each do |recipe| %>
+  
+    <div class="container-card m-4 d-flex tarjetas">
+        <div class="c-imagen">
+          <%= image_tag recipe.image_url, class: 'imagen_recipes' %>
+        </div>
+
+    <div class="c-card p-2">
+      <p class="titulo_recetas"><%= link_to "#{recipe.name_recipes.upcase}", recipe_path(recipe) %></p>
+      <p><%= recipe.preparation %></p>
+    </div>
+  </div>
+
+  <% end %>
+</div>
