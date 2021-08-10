@@ -1,7 +1,14 @@
 // Specific CSS for your home-page
+// body {
+//   font-family: Poppins;
+//   text-align: center;
+//   align-self: center;
+//   align-content: center;
+//   background-color: rgb(255, 255, 255);
+// }
+
 h1 {
   color: #F58634;
-  font-family: Poppins;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -12,7 +19,6 @@ h1 {
 
 h2 {
   color: #00AF91;
-  font-family: Poppins;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -23,7 +29,6 @@ h2 {
 
 h3 {
   color: #000000;
-  font-family: Poppins;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -33,7 +38,6 @@ h3 {
 }
 
 p {
-  font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -46,7 +50,6 @@ p {
 
 g {
   color: #00AF91;
-  font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -59,7 +62,6 @@ g {
 
 o {
   color: #F58634;
-  font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -71,7 +73,6 @@ o {
 }
 
 a {
-  font-family: Poppins;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -80,6 +81,79 @@ a {
   text-align: left;
 }
 
+.banner {
+  height: 418px;
+  width: 1440px;
+}
+
+.quote {
+  margin-left: 846px;
+  margin-top: 288px;
+}
+
+.quote h1, h2 {
+  padding: 20px;
+  text-align: center;
+  font-size: 49.3px;
+  line-height: 22.5px;
+}
+
 .steps {
   display: flex;
+  margin-top: 40px;
+}
+
+.step {
+  padding: 60px;
+  margin: 40px;
+  height: 300px;
+  width: 300px;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+
+.stepg {
+  border: 5px solid #00AF91;
+}
+
+.stepo {
+  border: 5px solid #F58634;
+}
+
+.step h1, h3, g, o {
+  padding: 7px;
+  text-align: center;
+}
+
+.text h3 {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.card {
+  border: transparent;
+  text-align: center;
+  align-items: center;
+}
+
+.rrss a {
+  color: #000000;
+}
+
+//------------------------------------------------------
+@media (max-width: 960px) {
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  .container {
+    width: 300px;
+  }
 }
