@@ -11,31 +11,22 @@
 }
 
 .col-md-6 box h2 {
-  display: flex;
+  // display: flex;
   color: #00AF91;
-  font-family: Poppins;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: auto;
-  letter-spacing: 0px;
   text-align: center;
-  text-decoration: none;
-  padding-bottom: 50px
 }
 
-.col-md-6 box shadows {
-  box-shadow: 0px 4px 20px 0px #0000001A;
-  efects: drop-shadows
-}
-
-.col-md-6 box {
-  display: flex;
-  height: 500px;
-  width: 100px;
-  top: -18.84%;
-  bottom: -15.79%;
-
-  background: #FFFFFF;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-}
+// display: flex;
+//   margin: auto;
+//   width: 320px;
+//   height: 420px;
+//   background: #FFFFFF;
+//   top: 50%;
+//   left: 50%;
+//   position: absolute;
+//   transform: translate(-50%, -50%);
+//   box-sizing: border-box;
+//   padding: 70px 30px;
+//   border-radius: 50px;
+//   bottom: -15.79%;
+//   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
