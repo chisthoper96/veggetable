@@ -1,0 +1,41 @@
+.button-green{
+  user-select: none;
+  background-color: transparent;
+  border: 4px solid transparent;
+  color: #5a06c7;
+  border-color: #00AF91;
+  font-size: 1rem;
+  border-radius: .6rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+ 
+}
+.button {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border-radius: 44px;
+  background-color: #F58634;
+  width: 397px;
+  height: 100px;
+  box-shadow: 2px 2px 3px #8eb3ac;
+  text-decoration: none;
+  padding: 15px;
+  font-size: 24px;
+  display: block;
+  margin: 0 auto;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-style: solid;
+  border: initial !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  padding-left: 44px;
+}
+
+.button:hover {
+  background-color: #00AF91;
+  color: rgb(248, 145, 48);
+  text-decoration: none;
+}

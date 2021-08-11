@@ -11,3 +11,11 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  font-family: Poppins;
+  text-align: center;
+  align-self: center;
+  align-content: center;
+  background-color: rgb(255, 255, 255);
+}
