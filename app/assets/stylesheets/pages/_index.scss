@@ -1,2 +1,23 @@
 // Import page-specific CSS files here.
 @import "home";
+@import "sessions";
+
+.tarjetas{
+    border: 2px solid #F58634;
+    border-radius: 15px;
+}
+
+.titulo_recetas{
+    font-weight: bold;
+}
+.titulo_recetas a {
+    text-decoration: none;
+    color: black;
+}
+
+.imagen_recipes{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px 0px 0px 12px;
+}
