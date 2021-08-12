@@ -1,18 +1,22 @@
-<h1 class = "p-4">Tenemos para ti ...</h1>
+<h1 class = " titulo-negro p-4 m-4" >Tenemos para ti ...</h1>
 
 <div class="container d-flex">
+  <div class="row">
   <% @recipes.each do |recipe| %>
-  
-    <div class="container-card m-4 d-flex tarjetas">
-        <div class="c-imagen">
-          <%= image_tag recipe.image_url, class: 'imagen_recipes' %>
+      <div class="col-md-6">
+        <div class="tarjeta-body d-flex tarjetas mb-3 ml-1 m4">
+          <div>
+            <%= image_tag recipe.image_url, class: 'imagen_recipes' %>
+          </div>
+          <div class="ml-4 text-justify: left">
+            <p class="titulo_recetas"><%= link_to "#{recipe.name_recipes.upcase}", recipe_path(recipe) %></p>
+            <p><%= recipe.preparation %></p>
+          </div>
         </div>
-
-    <div class="c-card p-2">
-      <p class="titulo_recetas"><%= link_to "#{recipe.name_recipes.upcase}", recipe_path(recipe) %></p>
-      <p><%= recipe.preparation %></p>
-    </div>
-  </div>
-
+      </div>
   <% end %>
+  </div>
 </div>
+
+
+  

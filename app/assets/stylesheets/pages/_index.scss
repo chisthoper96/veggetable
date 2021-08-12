@@ -2,26 +2,42 @@
 @import "home";
 @import "session";
 @import "registration";
-// <<<<<<< HEAD
-// =======
 
 .tarjetas{
-    border: 2px solid #F58634;
+    overflow: hidden;
+    border: 4px solid #F58634;
     border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .titulo_recetas{
     font-weight: bold;
+    text-justify: left;
 }
 .titulo_recetas a {
     text-decoration: none;
     color: black;
+
 }
 
 .imagen_recipes{
     width: 200px;
-    height: 150px;
     object-fit: cover;
-    border-radius: 12px 0px 0px 12px;
+    border-radius: 12px 12px 12px 12px;
+
 }
-// >>>>>>> master
+
+.tarjeta-body{
+    flex: 1 1 auto;
+    min-height: 1px;
+}
+
+.titulo-negro{
+    color: #020202;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
