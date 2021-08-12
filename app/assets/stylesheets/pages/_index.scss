@@ -1,7 +1,7 @@
 // Import page-specific CSS files here.
 @import "home";
-@import "sessions";
-
+@import "session";
+@import "registration";
 
 .tarjetas{
     overflow: hidden;
@@ -39,5 +39,5 @@
     font-weight: 700;
     line-height: 16px;
     letter-spacing: 0.5px;
-    text-align: left;   
+    text-align: left;
 }
