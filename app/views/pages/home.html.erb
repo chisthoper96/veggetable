@@ -11,11 +11,11 @@
 
 <body>
   <div class="banner">
-    <img src="" alt="banner" class="photo">
-    <div class="quote">
-      <h1>Buena mano</h1>
-      <h2>y todo a mano</h2>
-    </div>
+    <img class="photo" src="<%= asset_path('image.png')%>" alt="logo">
+      <div class="quote">
+        <h1>Buena mano</h1>
+        <h2>y todo a mano</h2>
+      </div>
   </div>
 
   <div class="container">
@@ -25,27 +25,25 @@
 
     <div class="steps">
       <div class="step stepg">
-        <h1>1</h1>
+        <h2>1</h2>
         <h3>Revisa</h3>
         <g>No te preocupes! Cocinaremos solo con tus ingredientes disponibles</g>
       </div>
 
       <div class="step stepo">
-        <h1>2</h1>
+        <h2>2</h2>
         <h3>Ingresa</h3>
         <o>Ingresa tantos ingredientes como gustes, ¡el límite también lo indicas tú!</o>
       </div>
 
       <div class="step stepg">
-        <h1>3</h1>
-        <h3>cocinar</h3>
+        <h2>3</h2>
+        <h3>cocina</h3>
         <g>Elije la receta que prefieras y cocina sin salir de casa y sin gastar demás</g>
       </div>
     </div>
 
-    <div href="" type="button" class="button" target="_blank">
-      <a>Búsqueda</a>
-    </div>
+    <%= link_to  "Búsqueda", search_path, class: 'button' %>
 
     <div class="card">
       <a>No es solo tener buena mano para cocinar, sino cocinar con lo que tengo a mano</a>

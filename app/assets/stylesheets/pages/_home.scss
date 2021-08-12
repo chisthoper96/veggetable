@@ -1,11 +1,4 @@
 // Specific CSS for your home-page
-// body {
-//   font-family: Poppins;
-//   text-align: center;
-//   align-self: center;
-//   align-content: center;
-//   background-color: rgb(255, 255, 255);
-// }
 
 h1 {
   color: #F58634;
@@ -83,15 +76,28 @@ a {
 
 .banner {
   height: 418px;
-  width: 1440px;
+  width: auto;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.photo {
+  height: 418px;
+  width: auto;
 }
 
 .quote {
-  margin-left: 846px;
-  margin-top: 288px;
+  background: transparent;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin-left: 880px;
+  margin-top: 200px;
 }
 
 .quote h1, h2 {
+  background: transparent;
   padding: 20px;
   text-align: center;
   font-size: 49.3px;
@@ -121,13 +127,17 @@ a {
   border: 5px solid #F58634;
 }
 
+.stepo h2 {
+  color: #F58634;
+}
+
 .step h1, h3, g, o {
   padding: 7px;
   text-align: center;
 }
 
 .text h3 {
-  margin-top: 100px;
+  margin-top: 80px;
   text-align: center;
 }
 
@@ -137,8 +147,6 @@ a {
   align-items: center;
 }
 
-// <<<<<<< HEAD
-// =======
 .rrss a {
   color: #000000;
 }
