@@ -5,6 +5,6 @@ class PagesController < ApplicationController
   end
 
   def search
-    @ingredients = Ingredient.select("name_ingredient")
+    @ingredients = Ingredient.select(:name_ingredient)
   end
 end

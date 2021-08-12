@@ -17,7 +17,7 @@ recipes3 = Recipe.create({name_recipes: 'fajitas', preparation: 'descripcion pre
 # Ingredientes
 
 ingredients1 = Ingredient.create({name_ingredient: 'papas'})
-ingredients1 = Ingredient.create({name_ingredient: 'palta'})
-ingredients1 = Ingredient.create({name_ingredient: 'apio'})
-ingredients1 = Ingredient.create({name_ingredient: 'arandanos'})
-ingredients1 = Ingredient.create({name_ingredient: 'lechuga'})
+ingredients2 = Ingredient.create({name_ingredient: 'palta'})
+ingredients3 = Ingredient.create({name_ingredient: 'apio'})
+ingredients4 = Ingredient.create({name_ingredient: 'arandanos'})
+ingredients5 = Ingredient.create({name_ingredient: 'lechuga'})
