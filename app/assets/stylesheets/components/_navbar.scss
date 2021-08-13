@@ -9,47 +9,38 @@
 
 li, a, button-navbar {
   font-family: "Open Sans", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: #edf0f1;
+  color: #00AF91;
   text-decoration: none;
 }
 
-button-navbar {
-  text-decoration: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-left: 30px;
-  padding: 9px 25px;
-  background-color: #00AF91;
-  border: none;
-  border-radius: 50px;
-  transition: all 0.3s ease 0s;
+.navbar-btn-logout {
+  background: #00AF91;
+  border-radius: 44px;
+  padding: 14px 24px;
+  color: white;
 }
 
-button-green{
-  text-decoration: none;
+.navbar-btn-perfil{
   color: #00AF91;
   background-color: white;
   border: 4px solid;
   border-color: #00AF91;
-  font-size: 1rem;
-  border-radius: .6rem;
+  border-radius: 44px;
   margin-left: 30px;
-  padding: 9px 25px;
+  padding: 14px 24px;
 }
 
-header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 30px 10%;
-}
+// header {
+//   display: flex;
+//   justify-content: flex-end;
+//   align-items: center;
+//   padding: 30px 10%;
+// }
 
 .logo {
   cursor: pointer;
   margin-right: auto;
+  height: 50px;
 }
 
 .nav_links {
