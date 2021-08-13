@@ -14,7 +14,8 @@
     <nav>
       <ul class="nav_links">
         <li><a class="cta-claro" href="#"><button>Iniciar Sesión</button></a></li>
-        <li><a class="cta" href="#"><button>Regístrate</button></a></li>
+        <%= link_to  "Registrarme",  new_user_registration_path, class: 'cta-claro' %>
+        <%= link_to  "cerrar sesion",  destroy_user_session_path, method: :delete %>
       </ul>
     </nav>
   </header>
