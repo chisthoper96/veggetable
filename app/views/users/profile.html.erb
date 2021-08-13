@@ -1,1 +1,17 @@
-<H1 class="p-2">Perfil del usuario</H1>
+<H1 class="p-2 ml-4">Perfil del usuario</H1>
+
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-sm">
+      <p>imagen de perfil</p>
+    </div>
+    <div class="col-sm">
+      <p><%= current_user.name %></p>
+      <p><%= current_user.email  %></p>
+    </div>
+    <div class="col-sm">
+      <p>tipo de alimentacion</p>
+      <p>ingrediente preferido</p>
+    </div>
+  </div>
+</div>
