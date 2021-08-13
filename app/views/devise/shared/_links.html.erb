@@ -1,6 +1,5 @@
 <%- if controller_name != 'sessions' %>
-<!--   <%= link_to "Iniciar Sesión", new_session_path(resource_name) %><br />
-<% end %> -->
+<% end %>
 
 <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
   <%= link_to "¿Olvidaste tu contraseña?", new_password_path(resource_name) %><br />

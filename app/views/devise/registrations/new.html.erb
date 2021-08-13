@@ -1,6 +1,6 @@
 <div class="box-registrations">
   <div class="container">
-    <h2 class="text-center">Registrarse</h2>
+    <h2 class="text-center">Regístrate</h2>
 
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= f.error_notification %>
@@ -28,8 +28,8 @@
                 input_html: { autocomplete: "new-password", placeholder: "Confirme Contraseña" } %>
   </div>
 
-  <div class="button-green-filled">
-    <%= f.button :submit, class="txt-boton", "Crear Cuenta" %>
+  <div>
+    <%= f.button :submit, "Crear Cuenta", class:"button-green-filled" %>
   </div>
 <% end %>
 

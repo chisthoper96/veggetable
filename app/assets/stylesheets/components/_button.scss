@@ -41,18 +41,8 @@
 }
 
 .button-green-filled {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 14px 24px;
-
-  position: absolute;
+  padding: 15px;
   width: 194px;
-  height: 44px;
-  left: 130px;
-  top : 450px;
-
   background: #00AF91;
   border-radius: 44px;
 }
