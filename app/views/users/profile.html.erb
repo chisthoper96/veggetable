@@ -1,7 +1,7 @@
 <H1 class="p-2 ml-4">Perfil del usuario</H1>
 
 <div class="container">
-  <div class="row mt-5">
+  <div class="row mt-5 profile-info">
     <div class="col-sm">
       <p>imagen de perfil</p>
     </div>
@@ -13,5 +13,16 @@
       <p><%= current_user.feeding_type %></p>
       <p>ingrediente preferido</p>
     </div>
+  </div>
+  <div class="row mt-5 justify-content-around">
+
+    <div class="col-4 estilos-favoritos align-middle">
+      <h3>Favoritos</h3>
+    </div>
+
+    <div class="col-4 estilos-favoritos green align-middle">
+      <h3>Sugerencia del dìa</h3>
+    </div>
+  
   </div>
 </div>

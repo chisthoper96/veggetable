@@ -5,7 +5,7 @@
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= f.error_notification %>
 
-  <div class="form-registrations text-center">
+  <div class="form-registrations">
   <%= f.input :name,
                 required: true,
                 autofocus: true,
@@ -35,7 +35,7 @@
   </div>
 
   <div>
-    <%= f.button :submit, "Crear Cuenta", class:"button-green-filled" %>
+    <%= f.button :submit, "Crear Cuenta", class:"button-green-filled mt-5" %>
   </div>
 <% end %>
 
