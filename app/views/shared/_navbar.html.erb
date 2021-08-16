@@ -1,26 +1,14 @@
-<!DOCTYPE html>
-<head>
-  <meta charset ="utf-8">
-  <meta http-equiv="X-UA-Compatible" contect="IE=edge">
-  <title>Navbar</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link ref="stylesheet" href="">
-  
-</head>
-<body>
-  <header>
-    <img class="logo" src="../assets/images/logo.jpg" alt="logo">
-    <nav>
-      <ul class="nav_links">
-        <li><a class="cta-claro" href="#"><button>Iniciar Sesión</button></a></li>
-        <li><a class="cta" href="#"><button>Regístrate</button></a></li>
-      </ul>
-    </nav>
-  </header>
-</body>
-
-
-
-
-</html>
+<nav class="navbar navbar-light bg-light justify-content-between">
+  <%= link_to root_path, class: "navbar-brand" do %>
+      <%= image_tag 'logo.jpg', alt: 'logo'  %>
+    <% end %>
+  <div class="form-inline mr-2">
+          <% if user_signed_in? %>
+            <%= link_to "perfil", "#", class: "navbar-button navbar-btn-perfil" %>
+          <% else %>
+            <%= link_to  "Iniciar Sesión", new_user_session_path, class: 'btn navbar-btn-perfil' %>
+            <%= link_to  "Regístrate", new_user_registration_path, class: 'btn navbar-btn-logout' %>
+          <% end %>
+  </div>
+</nav>
+ 

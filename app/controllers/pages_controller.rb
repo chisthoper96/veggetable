@@ -5,6 +5,7 @@ class PagesController < ApplicationController
   end
 
   def search
-    @ingredients = Ingredient.select(:name_ingredient)
+    @ingredients = Ingredient.all
+    @ingredients.select { '&:name_ingredient' }
   end
 end
