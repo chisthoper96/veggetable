@@ -1,13 +1,29 @@
 <div class="container">
-    <h4>poner imagen aqui</h4>
-    
-    <div class="container-receta">
-      <h1 class ="p-4 "><%= @recipe.name_recipes %></h1> 
-      <h4>INGREDIENTES</h4>
 
-      <h4>MODO DE PREPARACIÓN: </h4>
-      <%= @recipe.preparation  %>
+    <div class="row mt-5">
+
+      <div class="col-6">
+        <%= image_tag @recipe.image_url, class: 'imagen-show' %>
+      </div>
+
+      <div class="col-6">
+
+        <div class="container-receta text-left">
+          <h1 class ="p-4 "><%= @recipe.name_recipes %></h1> 
+          <h4>INGREDIENTES</h4>
+
+          <h4>MODO DE PREPARACIÓN: </h4>
+          <%= @recipe.preparation  %>
+
+          <div class="contenedor-chico d-flex p-2 ">
+            <span><i class="far fa-3x fa-heart p-2 mr-3"></i></span>
+            <p class="mb-0"><%= link_to  "ver más recetas", search_path, class: 'button', id: 'ver-receta' %></p>
+          </div>
+
+        </div>
+      </div>
     </div>
+
 </div>
 
 
