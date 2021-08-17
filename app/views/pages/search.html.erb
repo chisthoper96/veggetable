@@ -6,8 +6,6 @@
 
   <%= form_tag('/recipes') do %>
     <%= select_tag "ingredients", options_from_collection_for_select(@ingredients, :id, :name_ingredient), class: 'select2', multiple: true, style: 'width: 200px;' %>
-<!--     <%= submit_tag 'Buscar' %>
- -->
-   <%= link_to  "Buscar", recipes_path, class: 'button' %>
+   <%= link_to "Buscar", recipes_path, class: 'button-green'%>
 
 <% end %>
