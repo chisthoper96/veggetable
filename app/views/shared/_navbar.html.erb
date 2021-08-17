@@ -4,7 +4,7 @@
     <% end %>
   <div class="form-inline mr-2">
           <% if user_signed_in? %>
-            <%= link_to "perfil", "#", class: "navbar-button navbar-btn-perfil" %>
+            <%= link_to "perfil", profile_path, class: "navbar-button navbar-btn-perfil" %>
           <% else %>
             <%= link_to  "Iniciar Sesión", new_user_session_path, class: 'btn navbar-btn-perfil' %>
             <%= link_to  "Regístrate", new_user_registration_path, class: 'btn navbar-btn-logout' %>
