@@ -4,7 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 li, a, button-navbar {
@@ -14,10 +14,13 @@ li, a, button-navbar {
 }
 
 .navbar-btn-logout {
-  background: #00AF91;
+  background-color: #00AF91;
   border-radius: 44px;
   padding: 14px 24px;
-  color: white;
+  color: #fff;
+  border-color: #00AF91;
+  border-radius: 44px;
+  border: 6px solid;
 }
 
 .navbar-btn-perfil{
@@ -63,8 +66,10 @@ li, a, button-navbar {
 
 button:hover {
   background-color: rgba(0, 175, 145, 0.8);
+  color: rgb(248, 145, 48);
+  text-decoration: none;
 }
  .logo {
-   width: 100px;
+   width: 130px;
    height: auto;
  }
