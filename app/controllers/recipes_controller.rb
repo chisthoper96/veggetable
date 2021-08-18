@@ -2,6 +2,9 @@ class RecipesController < ApplicationController
   # las recetas estan en nuestra base de datos y solo necesitamos verlas.
   def index
     @recipes = Recipe.all
+    if params[:ingredients].present?
+      @recipes = @recipes.joins(:ingredient_recipes).where(ingredient_recipes: { ingredient_id: params[:ingredients] }).distinct
+    end
   end
 
   def show
