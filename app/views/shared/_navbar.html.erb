@@ -1,11 +1,11 @@
-<nav class="navbar navbar-light bg-light justify-content-between">
+<nav class="navbar navbar-white bg-white justify-content-between">
   <%= link_to root_path, class: "navbar-brand" do %>
       <%= image_tag 'logovegge-01.png', alt: 'logo', class:"logo"  %>
     <% end %>
   <div class="form-inline mr-2">
           <% if user_signed_in? %>
             <%= link_to "perfil", profile_path, class: "navbar-button navbar-btn-perfil" %>
-            <%= link_to "logout",  destroy_user_session_path,  :method => "delete" , class: "navbar-button navbar-btn-perfil" %>
+            <%= link_to "logout",  destroy_user_session_path,  :method => "delete" , class: "btn navbar-btn-logout" %>
           <% else %>
             <%= link_to  "Iniciar Sesión", new_user_session_path, class: 'btn navbar-btn-perfil' %>
             <%= link_to  "Regístrate", new_user_registration_path, class: 'btn navbar-btn-logout' %>
