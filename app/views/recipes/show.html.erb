@@ -16,7 +16,9 @@
           <%= @recipe.preparation  %>
 
           <div class="contenedor-chico d-flex p-2 ">
+            <%= link_to recipe_recipes_favorites_path(@recipe), class: "btn " do %>
             <span><i class="far fa-3x fa-heart p-2 mr-3"></i></span>
+            <% end %>
             <p class="mb-0"><%= link_to  "ver más recetas", search_path, class: 'button', id: 'ver-receta' %></p>
           </div>
 
@@ -25,6 +27,3 @@
     </div>
 
 </div>
-
-
-
