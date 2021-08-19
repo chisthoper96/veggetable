@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   get '/search', to: 'pages#search' 
   get '/profile', to: 'users#profile'
-  resources :recipes, only: [:index, :show]
+  resources :recipes, only: [:index, :show] do
+  resources :recipes_favorites, only: [:index, :create]
+  end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
