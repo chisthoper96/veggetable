@@ -4,8 +4,7 @@
 
 <h5 class="mt-5 mb-5">Siempre es un buen momento para probar algo nuevo y disfrutar en casa, ¡sabe mejor!</h5>
 
-  <%= form_tag('/recipes') do %>
+  <%= form_tag recipes_path, method: :get do %>
     <%= select_tag "ingredients", options_from_collection_for_select(@ingredients, :id, :name_ingredient), class: 'select2', multiple: true, style: 'width: 200px;' %>
-   <%= link_to "Buscar", recipes_path, class: 'button-green'%>
-
-<% end %>
+   <div><%= submit_tag 'buscar', name: nil, class: 'button-green' %></div>
+  <% end %>
