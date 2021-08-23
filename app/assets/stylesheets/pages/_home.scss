@@ -2,26 +2,6 @@
 .home-container {
 
 h1 {
-  color: #F58634;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.5px;
-  text-align: left;
-}
-
-h2 {
-  color: #00AF91;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.5px;
-  text-align: left;
-}
-
-h3 {
   color: #000000;
   font-size: 30px;
   font-style: normal;
@@ -42,30 +22,6 @@ p {
   letter-spacing: 0.5px;
 }
 
-g {
-  color: #00AF91;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 16px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.5px;
-}
-
-o {
-  color: #F58634;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 16px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.5px;
-}
-
 a {
   font-size: 24px;
   font-style: normal;
@@ -75,39 +31,32 @@ a {
   text-align: left;
 }
 }
+
 .banner {
-  height: 418px;
-  width: auto;
-  position: relative;
-  display: inline-block;
-  text-align: center;
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  .h-green {
+    color: #00AF91;
+  }
+  .h-orange {
+    color:#F58634;
+  }
+  h1 {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    font-size: 64px !important;
+    line-height: 50px;
+  }
 }
 
-.photo {
-  height: 418px;
-  width: auto;
-}
-
-.quote {
-  background: transparent;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  margin-left: 880px;
-  margin-top: 200px;
-}
-
-.quote h1, h2 {
-  background: transparent;
-  padding: 20px;
-  text-align: center;
-  font-size: 49.3px;
-  line-height: 22.5px;
-}
-
-.steps {
-  display: flex;
-  margin-top: 40px;
+.text {
+  margin-top: 80px;
+  h1 {
+    text-align: center;
+    font-size: 38px;
+  }
 }
 
 .step {
@@ -118,7 +67,38 @@ a {
   background: #FFFFFF;
   box-sizing: border-box;
   border-radius: 30px;
+  justify-items: center;
+  .num-g {
+    color: #00AF91;
+    font-size: 64px
+  }
+  .num-o {
+    color: #F58634;
+    font-size: 64px
+  }
+  h1 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .p-green {
+   color: #00AF91;
+   line-height: 20px;
+  }
+  .p-orange {
+   color: #F58634;
+   line-height: 20px;
+  }
+  .subtitle {
+    font-size: 38px;
+    line-height: 60px;
+  }
 }
+
+.steps {
+  display: flex;
+  margin-top: 30px;
+}
+
 
 .stepg {
   border: 5px solid #00AF91;
@@ -126,20 +106,6 @@ a {
 
 .stepo {
   border: 5px solid #F58634;
-}
-
-.stepo h2 {
-  color: #F58634;
-}
-
-.step h1, h3, g, o {
-  padding: 7px;
-  text-align: center;
-}
-
-.text h3 {
-  margin-top: 80px;
-  text-align: center;
 }
 
 .card {

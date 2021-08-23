@@ -10,41 +10,37 @@
 </head>
 
 <body>
+
 <div class="home-container">
-  <div class="banner">
-    <img class="photo" src="<%= asset_path('image.png')%>" alt="logo">
-      <div class="quote">
-        <h1>Buena mano</h1>
-        <h2>y todo a mano</h2>
-      </div>
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= asset_path('image.png')%>);">
+    <div class="d-flex justify-content-end align-items-end w-75">
+      <h1><span class="h-green text-center">Buena mano</span> <span class="h-orange">y todo a mano</span></h1>
+    </div>
   </div>
 
   <div class="container">
     <div class="text">
-      <h3>En 3 simples pasos</h3>
+      <h1>En 3 simples pasos</h1>
     </div>
 
     <div class="steps">
       <div class="step stepg">
-        <h2>1</h2>
-        <h3>Revisa</h3>
-        <g>No te preocupes! Cocinaremos solo con tus ingredientes disponibles</g>
+        <h1><span class="num-g">1 </span><span class="subtitle">Revisa</span></h1>
+        <p><span class="p-green">No te preocupes! Cocinaremos solo con tus ingredientes disponibles</span></p>
       </div>
 
       <div class="step stepo">
-        <h2>2</h2>
-        <h3>Ingresa</h3>
-        <o>Ingresa tantos ingredientes como gustes, ¡el límite también lo indicas tú!</o>
+        <h1><span class="num-o">2 </span><span class="subtitle">Ingresa</span></h1>
+        <p><span class="p-orange">Ingresa tantos ingredientes como gustes, ¡el límite también lo indicas tú!</span></p>
       </div>
 
       <div class="step stepg">
-        <h2>3</h2>
-        <h3>cocina</h3>
-        <g>Elije la receta que prefieras y cocina sin salir de casa y sin gastar demás</g>
+        <h1><span class="num-g">3 </span><span class="subtitle">Cocina</span></h1>
+        <p><span class="p-green">Elije la receta que prefieras y cocina sin salir de casa y sin gastar demás</span></p>
       </div>
     </div>
 
-    <%= link_to  "Búsqueda", search_path, class: 'button' %>
+    <%= link_to "Búsqueda", search_path, class: "button circle" %>
 
     <div class="card">
       <a>No es solo tener buena mano para cocinar, sino cocinar con lo que tengo a mano</a>
