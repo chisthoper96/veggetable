@@ -1,11 +1,8 @@
-.button-green{
+.button-orange{
   user-select: none;
-
   width: 194px;
-  background-color: white;
-  border: 4px solid;
-  color: #00AF91;
-  border-color: #00AF91;
+  background-color: #F58634;
+  color: white;
   font-size: 1rem;
   border-radius: 2rem;
   padding: 15px;
@@ -16,9 +13,9 @@
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.button-green:hover {
-  background-color: #e0e0e0;
-  color: #01705e;
+.button-orange:hover {
+  background-color: #00AF91;
+  color: #F58634;
   text-decoration: none;
 }
 
@@ -57,8 +54,22 @@
   color: rgb(255, 255, 255);
   width: 194px;
   background: #00AF91;
-  border-radius: 44px;
-  padding: 15px;
   text-align: center;
   box-sizing: border-box;
+  font-size: 1rem;
+  border-radius: 2rem;
+  padding: 15px;
+  font-size: 16px;
+  display: block;
+  margin: 0 auto;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-decoration: none;
+}
+
+.button-green-filled:hover {
+  background-color: #F58634;
+  color: #01705e;
+  text-decoration: none;
 }
