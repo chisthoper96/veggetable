@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get '/search', to: 'pages#search' 
   get '/profile', to: 'users#profile'
   resources :recipes, only: [:index, :show] do
-  resources :recipes_favorites, only: [:index, :create]
+    resources :recipes_favorites, only: [:index, :create, :destroy]
   end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

@@ -16,14 +16,46 @@
           <%= @recipe.preparation  %>
 
           <div class="contenedor-chico d-flex p-2 ">
-            <%= link_to recipe_recipes_favorites_path(@recipe), class: "btn " do %>
+
+            <!-- <%= link_to recipe_recipes_favorites_path(@recipe), class: "btn " do %>
             <span><i class="far fa-3x fa-heart p-2 mr-3"></i></span>
+                      <% end %> --> 
+
+           <!--   <% if @recipefavorite.present? %>
+              <button id="btn" type="button" class="btn btn-link"><i class="fas fa-3x fa-heart  p-2 mr-3"></i></button>
+            <% else %>
+              <button id="btn" type="button" class="btn btn-link"><i class="far fa-3x fa-heart  p-2 mr-3"></i></button>
+            <% end %>-->
+
+
+          <% if !Recipefavorite.exists?(user_id: current_user.id, recipe_id: @recipe.id) %>
+            <%= link_to recipe_recipes_favorites_path(@recipe.id), method: :post, remote: true do %>
+              <i class="far fa-3x fa-heart  p-2 mr-3"></i>
             <% end %>
+          <% else %>
+            <%= link_to  recipe_recipes_favorite(recipe_id: recipe.id, id: recipe.likes[0].id), method: :delete, remote: true do %>
+              <i class="fas fa-3x fa-heart  p-2 mr-3"></i>
+            <% end %>
+          <% end %>
+
+
+
+            <script>
+              const btn = document.getElementById('btn')
+              console.log(btn)
+              btn.addEventListener('click', ()=> {
+
+               })
+            </script>
+
+        
             <p class="mb-0"><%= link_to  "ver más recetas", search_path, class: 'button', id: 'ver-receta' %></p>
           </div>
 
         </div>
       </div>
     </div>
-
 </div>
+
+
+
