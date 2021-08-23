@@ -1,12 +1,5 @@
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400|Poppins=400');
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff;
-}
-
 li, a, button-navbar {
   font-family: "Open Sans", sans-serif;
   color: #00AF91;
@@ -31,13 +24,6 @@ li, a, button-navbar {
   margin-left: 30px;
   padding: 14px 24px;
 }
-
-// header {
-//   display: flex;
-//   justify-content: flex-end;
-//   align-items: center;
-//   padding: 30px 10%;
-// }
 
 .logo {
   cursor: pointer;
