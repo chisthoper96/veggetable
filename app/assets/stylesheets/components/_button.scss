@@ -31,9 +31,8 @@
   height: 100px;
   box-shadow: 2px 2px 3px #8eb3ac;
   text-decoration: none;
-  padding: 15px;
+  padding: 15px 30px;
   font-size: 24px;
-  display: block;
   margin: 0 auto;
   font-weight: 600;
   margin-top: 50px;
@@ -41,16 +40,14 @@
   border-style: solid;
   border: initial !important;
   display: flex;
-  flex-direction: row;
-  justify-content: left;
+  justify-content: space-between;
   align-items: center;
-  padding-left: 44px;
 }
 
-.button circle {
+.button div {
   border: 3px solid white;
-  width: 15px;
-  height: 15px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
 }
 
