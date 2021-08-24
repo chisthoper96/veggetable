@@ -1,1 +1,25 @@
-<h1>Favoritos</h1>
+<h1 class="mb-5">Favoritos</h1>
+   
+<div class="container">
+  <% @favorites.each do |favorite| %>
+
+    <div class="col-lg-12">
+      <div class="tarjeta-body d-flex tarjetas mb-3 ml-1 m4" id="tarjetas-favoritos">
+        <div>
+          <%= image_tag favorite.recipe.image_url, class: 'imagen_recipes' %>
+        </div>
+        <div class="ml-4 text-left">
+          <p class="titulo_recetas"><%= link_to "#{favorite.recipe.name_recipes.upcase}", recipe_path(favorite.recipe) %></p>
+          <P>Ingredientes</P>
+
+          favorite.recipe.ingredientrecipe
+            <% favorite.recipe.rating.times do |time| %>
+              <i class="fas fa-star color-star"></i> 
+            <% end %>
+        </div>
+      </div>
+    </div>
+
+  <% end %>
+
+</div>

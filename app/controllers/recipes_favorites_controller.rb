@@ -1,7 +1,6 @@
 class RecipesFavoritesController < ApplicationController
   def index
     @favorites = Recipefavorite.all
-    @recipe = Recipe.find(params[:recipe_id])
   end
 
   def create
