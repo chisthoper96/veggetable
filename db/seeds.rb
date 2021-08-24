@@ -229,5 +229,3 @@ recetaingrediente12 = IngredientRecipe.create({recipe: recipes3, ingredient: ing
 # Hornear unos 15 minutos o hasta obtener un tono dorado de ambos lados de las tiritas de pan integral.', types_of_food: 'vegano', rating: 5, image_url: 'https://www.vegrecetas.com/wp-content/uploads/palitos-fritos-pan-integral.jpg'})
 
 
-
-

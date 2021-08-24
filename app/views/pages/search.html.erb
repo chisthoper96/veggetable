@@ -1,12 +1,12 @@
 <div class="container p-1" >
 
-  <h1 class="title-busqueda"><span class="h-green">¡Revisa tu nevera</span> <span>e ingresa tus ingredientes!</span></h1>
+  <h1 class="title-busqueda"><span class="h-green">¡Revisa tu nevera</span> <span class="h-orange">e ingresa tus ingredientes!</span></h1>
 </div>
 
 <h5 class="mt-5 mb-5">Siempre es un buen momento para probar algo nuevo y disfrutar en casa, ¡sabe mejor!</h5>
 
   <%= form_tag recipes_path, method: :get do %>
-    <%= select_tag "ingredients", options_from_collection_for_select(@ingredients, :id, :name_ingredient), class: 'select2', multiple: true, style: 'width: 200px;' %>
+    <%= select_tag "ingredients", options_from_collection_for_select(@ingredients, :id, :name_ingredient), class: 'select2', multiple: true, style: 'width: 250px;' %>
    <%= link_to "Buscar", recipes_path, class: 'button-orange'%>
 
 <% end %>
