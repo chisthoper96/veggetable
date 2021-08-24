@@ -23,16 +23,23 @@
 }
 
 .imagen_recipes{
+    height: 100%;
     width: 200px;
     object-fit: cover;
     border-radius: 12px 12px 12px 12px;
-
 }
 
 .tarjeta-body{
     flex: 1 1 auto;
     min-height: 1px;
     height: 130px;
+}
+
+#tarjetas-favoritos{
+    height: 180px;
+}
+.color-star{
+    color: #FFCC29
 }
 
 .titulo-negro{
