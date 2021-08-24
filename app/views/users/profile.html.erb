@@ -1,11 +1,23 @@
-<H1 class="p-2 ml-4">Perfil del usuario</H1>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VeggeTable</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Poppins:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
-<div class="container">
+</head>
 
-  <div class="row mt-5 profile-info">
+<body>
 
+<div class="profile">
+  <h1>Perfil del usuario</h1>
+</div>
+
+<div class="profile-container">
+  <div class="row profile-info">
     <div class="col-sm">
-      <p>imagen de perfil</p>
+      <%= image_tag asset_path("perfil.jpg"), class: 'photo' %>
     </div>
 
     <div class="col-sm">
@@ -17,18 +29,24 @@
       <p><%= current_user.feeding_type %></p>
       <p>ingrediente preferido</p>
     </div>
-
   </div>
 
-  <div class="row mt-5 justify-content-around">
-
-    <div class="col-4 estilos-favoritos align-middle">
-       <h3><%= link_to "Favoritos", favorite_path, class: 'btn' %></h3>
+  <div class="options">
+    <div class="option">
+      <h1><%= link_to "Favoritos", recipe_recipes_favorites_path(:recipe_id), class: 'favorite-button' %></h1>
     </div>
 
-    <div class="col-4 estilos-favoritos green align-middle">
-      <h3>Sugerencia del dìa</h3>
+    <div class="option">
+      <h1><%= link_to "Sugerencia del día", recipe_recipes_favorites_path(:recipe_id), class: 'suggest-button' %></h1>
     </div>
-  
   </div>
+
+  <%= link_to search_path, class: "profile-btn" do %>
+    <span>Nueva Búsqueda</span>
+    <div></div>
+  <% end %>
+
 </div>
+
+</body>
+</html>
