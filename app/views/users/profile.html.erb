@@ -1,23 +1,29 @@
 <H1 class="p-2 ml-4">Perfil del usuario</H1>
 
 <div class="container">
+
   <div class="row mt-5 profile-info">
+
     <div class="col-sm">
       <p>imagen de perfil</p>
     </div>
+
     <div class="col-sm">
       <p><%= current_user.name %></p>
       <p><%= current_user.email  %></p>
     </div>
+
     <div class="col-sm">
       <p><%= current_user.feeding_type %></p>
       <p>ingrediente preferido</p>
     </div>
+
   </div>
+
   <div class="row mt-5 justify-content-around">
 
     <div class="col-4 estilos-favoritos align-middle">
-       <h3><%= link_to "Favoritos", recipe_recipes_favorites_path(:recipe_id), class: "btn " %></h3>
+       <h3><%= link_to "Favoritos", recipe_recipes_favorites_path(:recipe_id), class: 'btn' %></h3>
     </div>
 
     <div class="col-4 estilos-favoritos green align-middle">

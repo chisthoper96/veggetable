@@ -5,18 +5,18 @@ class RecipesFavoritesController < ApplicationController
   end
 
   def create
-    @favorite = Recipefavorite.new(favorite_params)
-    @favorite.save
-  end
-
-  def update
-  end
-
-  private
-
-  def favorite_params
-    user_id = current_user.id
     @recipe = Recipe.find(params[:recipe_id])
-    params.require(:recipes_favorites).permit(:user_id, :recipe_id)
+    @favorite = Recipefavorite.new
+    @favorite.recipe = @recipe
+    @favorite.user = current_user
+    @favorite.save
+    redirect_to recipe_path(@recipe)
+  end
+
+  def destroy
+    @recipe = Recipe.find(params[:recipe_id])
+    @favorite = Recipefavorite.find(params[:id])
+    @favorite.destroy
+    redirect_to @recipe
   end
 end
