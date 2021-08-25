@@ -1,5 +1,5 @@
 <h1 class="mb-5">Favoritos</h1>
-   
+
 <div class="container">
   <% @favorites.each do |favorite| %>
 
@@ -14,7 +14,7 @@
 
           favorite.recipe.ingredientrecipe
             <% favorite.recipe.rating.times do |time| %>
-              <i class="fas fa-star color-star"></i> 
+              <i class="fas fa-star color-star"></i>
             <% end %>
         </div>
       </div>
