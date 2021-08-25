@@ -1,18 +1,23 @@
-<h2>Forgot your password?</h2>
+<div class="box-sessions">
+  <div class="container">
+    <h2 class="text-center">¿Olvidaste tu contraseña?</h2>
 
 <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
   <%= f.error_notification %>
 
-  <div class="form-inputs">
-    <%= f.input :email,
-                required: true,
-                autofocus: true,
-                input_html: { autocomplete: "email" } %>
-  </div>
+      <div class="form-forgot-password row justify-content-center">
+        <%= f.input :email,
+                    required: true,
+                    autofocus: true,
+                    label: false,
+                    input_html: { autocomplete: "email", placeholder: "Ingrese su correo electrónico" } %>
+      </div>
 
-  <div class="form-actions">
-    <%= f.button :submit, "Send me reset password instructions" %>
+  <div class="form-actions row justify-content-center">
+    <%= f.button :submit, "Enviarme instrucciones para restablecer la contraseña", class:"text-center mt-5" %>
   </div>
 <% end %>
 
 <%= render "devise/shared/links" %>
+  </div>
+</div>
