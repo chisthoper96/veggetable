@@ -8,14 +8,21 @@
         <div>
           <%= image_tag favorite.recipe.image_url, class: 'imagen_recipes' %>
         </div>
-        <div class="ml-4 text-left">
+        <div class="ml-4 text-left" id="re">
           <p class="titulo_recetas"><%= link_to "#{favorite.recipe.name_recipes.upcase}", recipe_path(favorite.recipe) %></p>
           <P>Ingredientes</P>
 
-          favorite.recipe.ingredientrecipe
+
+          <% favorite.recipe.ingredients.each do |ingredient|%>
+            <p><%= ingredient.name_ingredient  %></p>
+          <% end %>
+          
+          <div class="pos-star">
             <% favorite.recipe.rating.times do |time| %>
               <i class="fas fa-star color-star"></i> 
             <% end %>
+          </div>
+            
         </div>
       </div>
     </div>
