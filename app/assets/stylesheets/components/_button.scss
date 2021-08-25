@@ -74,6 +74,79 @@
 
 .button-green-filled:hover {
   background-color: #F58634;
-  color: #01705e;
+  color: #00AF91;
   text-decoration: none;
+}
+
+.profile-btn {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border-radius: 44px;
+  background-color: #F58634;
+  width: 194px;
+  height: 44px;
+  box-shadow: 2px 2px 3px #8eb3ac;
+  font-size: 15px;
+  margin: 0 auto;
+  font-weight: 600;
+  border-style: solid;
+  border: initial !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.profile-btn:hover {
+  background-color: #00AF91;
+  color: white;
+  text-decoration: none;
+}
+
+.favorite-button {
+  text-decoration: none;
+  color: #F58634;
+  border-radius: 30px;
+  background-color: white;
+  width: 300px;
+  height: 170px;
+  padding: 15px 30px;
+  margin: 0 auto;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-style: solid;
+  border: 5px solid #F58634;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.suggest-button {
+  text-decoration: none;
+  color: #00AF91;
+  border-radius: 30px;
+  background-color: white;
+  width: 300px;
+  height: 170px;
+  padding: 15px 30px;
+  margin: 0 auto;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-style: solid;
+  border: 5px solid #00AF91;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.favorite-button:hover {
+  text-decoration: none;
+  color: #F58634;
+}
+
+.suggest-button:hover {
+  text-decoration: none;
+  color: #00AF91;
 }

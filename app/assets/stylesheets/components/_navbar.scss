@@ -1,11 +1,7 @@
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400|Poppins=400');
 
-li, a, button-navbar {
-  font-family: "Open Sans", sans-serif;
-  color: #00AF91;
-}
 
-.navbar-btn-logout {
+.navbar-btn-Salir {
   background-color: #00AF91;
   border-radius: 44px;
   padding: 14px 24px;
@@ -15,7 +11,7 @@ li, a, button-navbar {
   border: 2px solid;
 }
 
-.navbar-btn-perfil{
+.navbar-btn-Perfil{
   color: #00AF91;
   background-color: white;
   border: 2px solid;
@@ -28,7 +24,8 @@ li, a, button-navbar {
 .logo {
   cursor: pointer;
   margin-right: auto;
-  height: 50px;
+  width: 150px;
+  height: auto;
 }
 
 .nav_links {
@@ -48,13 +45,8 @@ li, a, button-navbar {
   color: #0088a9;
 }
 
-.navbar-btn-logout:hover {
+.navbar-btn-Salir:hover {
   background-color: rgba(0, 175, 145, 0.8);
   color: #fff;
   text-decoration: none;
-}
-
-.logo {
-  width: 130px;
-  height: auto;
 }
