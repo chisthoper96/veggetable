@@ -2,31 +2,35 @@
    
 <div class="container">
   <% @favorites.each do |favorite| %>
-
-    <div class="col-lg-12">
-      <div class="tarjeta-body d-flex tarjetas mb-3 ml-1 m4" id="tarjetas-favoritos">
-        <div>
-          <%= image_tag favorite.recipe.image_url, class: 'imagen_recipes' %>
-        </div>
-        <div class="ml-4 text-left" id="re">
-          <p class="titulo_recetas"><%= link_to "#{favorite.recipe.name_recipes.upcase}", recipe_path(favorite.recipe) %></p>
-          <P>Ingredientes</P>
-
-
-          <% favorite.recipe.ingredients.each do |ingredient|%>
-            <p><%= ingredient.name_ingredient  %></p>
-          <% end %>
-          
-          <div class="pos-star">
-            <% favorite.recipe.rating.times do |time| %>
-              <i class="fas fa-star color-star"></i> 
-            <% end %>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="tarjeta-body d-flex tarjetas mb-3 ml-1 m4" id="tarjetas-favoritos">
+          <div>
+            <%= image_tag favorite.recipe.image_url, class: 'imagen_recipes' %>
           </div>
+          <div class="ml-4 text-left" id="re">
+            <p class="titulo_recetas mt-2"><%= link_to "#{favorite.recipe.name_recipes.upcase}", recipe_path(favorite.recipe) %></p>
+
+            <h6 id="titulo-ingredientes mb-2">INGREDIENTES:</h6>
+            <%  @favoritos = favorite.recipe.ingredients.first(3)  %>
+            <% @favoritos.each do |ingredient|%>
+                <p class="contenido-cards"><%= ingredient.name_ingredient%>
+            <% end %>
             
+            <div class="pos-star">
+              <% favorite.recipe.rating.times do |time| %>
+                <i class="fas fa-star color-star"></i> 
+              <% end %>
+            </div>
+              
+          </div>
         </div>
       </div>
     </div>
-
   <% end %>
+<<<<<<< HEAD
 
 </div>
+=======
+</div>
+>>>>>>> 5448874ecbaf892079b59de2f7115deaacd2590c

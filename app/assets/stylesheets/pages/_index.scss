@@ -44,10 +44,13 @@
 
 #re{
     position: relative;
+    width: 100%;
 }
 
-.po-star{
-    top: 20px;
+.pos-star{
+    position: absolute;
+    top: 140px;
+    left: 350px;
 }
 
 .titulo-negro{
@@ -58,4 +61,10 @@
     line-height: 16px;
     letter-spacing: 0.5px;
     text-align: left;
+}
+.contenido-cards{
+    margin: 0;
+}
+#titulo-ingredientes{
+    margin: 0;
 }
