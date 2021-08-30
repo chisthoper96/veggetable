@@ -12,6 +12,13 @@
           <h1 class ="p-4 "><%= @recipe.name_recipes %></h1>
           <h4>INGREDIENTES</h4>
 
+          <%  @ingredientes = @recipe.ingredients  %>
+              <ul>
+            <% @ingredientes.each do |ingredient|%>
+                <li class="contenedor-chico d-flex p-2"><%= ingredient.name_ingredient%>
+            <% end %>
+            </ul>
+
           <h4>MODO DE PREPARACIÓN: </h4>
           <%= @recipe.preparation  %>
 
