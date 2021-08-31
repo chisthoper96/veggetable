@@ -15,7 +15,10 @@
           <%  @ingredientes = @recipe.ingredients  %>
               <ul>
             <% @ingredientes.each do |ingredient|%>
+              <div class="d-flex">
+                <span><%= image_tag asset_path("gota.png"), class: "reducir"%></span>
                 <li class="contenedor-chico d-flex p-2"><%= ingredient.name_ingredient%>
+              </div>
             <% end %>
             </ul>
 
