@@ -1,0 +1,25 @@
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  /* background-color: #e4e4e4; */
+  /* border: 1px solid #aaa; */
+  background-color: white !important;
+  border: none !important;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: 5px;
+  padding: 0;
+  padding-left: 20px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+  white-space: nowrap;
+}
+
+.select2-container {
+  border: 5px solid #F58634;
+  border-radius: 12px 12px 12px 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}

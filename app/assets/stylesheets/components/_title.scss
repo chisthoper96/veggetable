@@ -1,0 +1,37 @@
+.titulo-negro{
+  color: #020202;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+#titulo-ingredientes{
+  margin: 0;
+}
+
+.titulo_recetas{
+  font-weight: bold;
+  text-justify: left;
+}
+.titulo_recetas a {
+  text-decoration: none;
+  color: black;
+}
+
+.title-busqueda {
+  display: flex;
+  flex-direction: column;
+}
+
+.h-green {
+  font-size: 62px;
+  color: #00AF91;
+}
+
+.h-orange {
+  color: #F58634;
+}
+
