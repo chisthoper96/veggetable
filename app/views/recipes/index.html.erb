@@ -12,20 +12,20 @@
               <div class="ml-4 text-left">
               <p class="titulo_recetas"><%= link_to "#{recipe.name_recipes.upcase}", recipe_path(recipe) %></p>
             </div>
-
             <div class="dul">
-
-              <% @ingredientes = recipe.ingredients  %>
+              <% @ingredientes = recipe.ingredients.first(3) %>
               <ul>
                 <% @ingredientes.each do |ingredient|%>
                   <li class="contenedor-chico d-flex"><%= ingredient.name_ingredient%>
                 <% end %>
               </ul>
             </div>
-            
+            <div class="pos-star-recipe">
+              <% recipe.rating.times do |time| %>
+                <i class="fas fa-star color-star"></i> 
+              <% end %>
             </div>
-            
-
+            </div>
           </div>
         </div>
       <% end %>
