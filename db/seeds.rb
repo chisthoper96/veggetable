@@ -130,7 +130,7 @@ recipes1 = Recipe.new({name_recipes: 'Tortilla de patatas vegana', preparation: 
 recipes1.save!
 p 'Receta 1 creada'
 
-recetaingrediente1 = IngredientRecipe.create({recipe: recipes1, ingngredient: ingredients1 })
+recetaingrediente1 = IngredientRecipe.create({recipe: recipes1, ingredient: ingredients1 })
 recetaingrediente2 = IngredientRecipe.create({recipe: recipes1, ingredient: ingredients6 })
 recetaingrediente3 = IngredientRecipe.create({recipe: recipes1, ingredient: ingredients7 })
 
