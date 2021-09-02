@@ -1,0 +1,36 @@
+<h1 class="mb-5">Sugerencias del día</h1>
+
+<div class="container">
+  <%= @sugerencia.name_recipes %>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="tarjeta-body d-flex tarjetas mb-3 ml-1 m4">
+          <%= image_tag @sugerencia.image_url, class: 'imagen_recipes' %>
+          <div class="ml-4 text-left" id="re">
+            <p class="titulo_recetas mt-2"><%= link_to "#{recipe.name_recipes.upcase}", recipe_path(recipe) %></p>
+
+            <h6 id="titulo-ingredientes mb-2">INGREDIENTES:</h6>
+            <%  @favoritos = favorite.recipe.ingredients.first(3)  %>
+            <div class="margin-p">
+              <% @favoritos.each do |ingredient|%>
+                <p class="contenido-cards"><%= ingredient.name_ingredient%>
+            <% end %>
+            </div>
+            
+            <div class="pos-star">
+              <% favorite.recipe.rating.times do |time| %>
+                <i class="fas fa-star color-star"></i> 
+              <% end %>
+            </div>
+    
+          
+        </div> 
+      </div>
+    </div> 
+      <div class="row">
+      <div class="col-6 offset-3">
+        <%= link_to "volver al perfil", profile_path(current_user.id), class: 'button-orange'%>
+      </div>
+      </div>
+  </div>
+</div>
