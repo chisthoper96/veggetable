@@ -6,9 +6,37 @@
 <h5 class="mt-5 mb-5 mr-5 ml-5">Siempre es un buen momento para probar algo nuevo y disfrutar en casa, ¡sabe mejor!</h5>
 
   <%= form_tag recipes_path, method: :get do %>
- 
-    <%= select_tag 'ingredients', options_from_collection_for_select(@ingredients, :id, :name_ingredient), class: 'select2', multiple: true, style: 'width: 250px;' %>
 
-    <input type="submit" value="Buscar", class= 'button-orange' >
+      <%= select_tag 'ingredients', options_from_collection_for_select(@ingredients, :id, :name_ingredient), class: 'select2', multiple: true, style: 'width: 250px;' %>
+
+      <input type="submit" value="Buscar", class= 'button-orange' >
 
   <% end %>
+
+
+<%# ---------------------------------------------------------------------------------------------- %>
+
+<%# <!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Indique al menos 3 ingredientes");
+    return false;
+  }
+}
+</script>
+</head>
+<body>
+
+<h2>JavaScript Validation</h2>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="fname">
+  <input type="submit" value="Buscar", class= 'button-orange' >
+</form>
+
+</body>
+</html> %>

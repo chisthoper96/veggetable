@@ -4,6 +4,8 @@ class RecipesController < ApplicationController
     @recipes = Recipe.all
     if params[:ingredients].present?
       @recipes = @recipes.joins(:ingredient_recipes).where(ingredient_recipes: { ingredient_id: params[:ingredients] }).distinct
+    else
+      @recipes = redirect_to search_path
     end
   end
 
