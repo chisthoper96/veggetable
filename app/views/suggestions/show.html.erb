@@ -1,0 +1,19 @@
+<h1 class="mb-5">Sugerencias del día</h1>
+
+<div class="container">
+  <%= @sugerencia.name_recipes %>
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="tarjeta-body d-flex tarjetas mb-3 ml-1 m4">
+        <%= image_tag @sugerencia.image_url, class: 'imagen_recipes' %>
+    
+        <p class="titulo_recetas mt-2"></p>
+      </div> 
+    </div>  
+    
+      <div class="col-6 offset-3 mb-3 ml-1 m4">
+        <%= link_to "volver al perfil", profile_path(current_user.id), class: 'button-orange'%>
+      </div>
+    </div>
+  </div>
+</div>
