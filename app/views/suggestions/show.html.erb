@@ -1,19 +1,46 @@
-<h1 class="mb-5">Sugerencias del día</h1>
-
 <div class="container">
-  <%= @sugerencia.name_recipes %>
-  <div class="row justify-content-center">
-    <div class="col-lg-8">
-      <div class="tarjeta-body d-flex tarjetas mb-3 ml-1 m4">
-        <%= image_tag @sugerencia.image_url, class: 'imagen_recipes' %>
-    
-        <p class="titulo_recetas mt-2"></p>
-      </div> 
-    </div>  
-    
-      <div class="col-6 offset-3 mb-3 ml-1 m4">
-        <%= link_to "volver al perfil", profile_path(current_user.id), class: 'button-orange'%>
+    <h1 class="mb-5">Sugerencia del dia</h1>
+    <div class="row mt-5">
+
+      <div class="col-6">
+        <%= image_tag @sugerencia.image_url, class: 'imagen-show' %>
+      </div>
+
+      <div class="col-6">
+
+        <div class="container-receta text-left">
+          <h1 class ="p-4 "><%= @sugerencia.name_recipes %></h1>
+          <h4>INGREDIENTES</h4>
+
+          <%  @ingredientes = @sugerencia.ingredients  %>
+              <ul>
+            <% @ingredientes.each do |ingredient|%>
+              <div class="d-flex">
+                <span><%= image_tag asset_path("gota.png"), class: "reducir"%></span>
+                <li class="contenedor-chico d-flex p-2"><%= ingredient.name_ingredient%>
+              </div>
+            <% end %>
+            </ul>
+
+          <h4>MODO DE PREPARACIÓN: </h4>
+          <%= @sugerencia.preparation  %>
+
+          <div class="contenedor-chico d-flex p-2 ">
+            <% fav_recipe = current_user&.recipefavorites.find_by(recipe_id: @sugerencia.id) %>
+            <% if fav_recipe %>
+              <%= link_to recipe_recipes_favorite_path(@sugerencia, fav_recipe),method: :delete, class: "btn" do %>
+                <span><i class="fas fa-3x fa-heart p-2 mr-3 c"></i></span>
+              <% end %>
+            <% else %>
+              <%= link_to recipe_recipes_favorites_path(@sugerencia), method: :post, class: "btn" do %>
+                <span><i class="far fa-3x fa-heart p-2 mr-3 c"></i></span>
+              <% end %>
+            <% end %>
+
+            <p class="mb-0"><%= link_to  "ver más recetas", href="javascript:history.back()", class: 'button', id: 'ver-receta' %></p>
+
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 </div>
