@@ -12,7 +12,7 @@
           <h1 class ="p-4 "><%= @recipe.name_recipes %></h1>
           <h4>INGREDIENTES</h4>
 
-          <%  @ingredientes = @recipe.ingredients  %>
+          <% @ingredientes = @recipe.ingredients  %>
               <ul>
             <% @ingredientes.each do |ingredient|%>
               <div class="d-flex">
@@ -25,26 +25,31 @@
           <h4>MODO DE PREPARACIÓN: </h4>
           <%= @recipe.preparation  %>
           
-          <% if current_user.present? %>
-            <div class="contenedor-chico d-flex p-2 ">
+
+          <div class="contenedor-chico d-flex p-2 ">
+            <% if current_user.present? %>
+
               <% fav_recipe = current_user&.recipefavorites.find_by(recipe_id: @recipe.id) %>
               <% if fav_recipe %>
-                <%= link_to recipe_recipes_favorite_path(@recipe, fav_recipe),method: :delete, class: "btn" do %>
+                <%= link_to recipe_recipes_favorite_path(@recipe, fav_recipe), method: :delete, class: "btn" do %>
                   <span><i class="fas fa-3x fa-heart p-2 mr-3 c"></i></span>
                 <% end %>
+
               <% else %>
+
                 <%= link_to recipe_recipes_favorites_path(@recipe), method: :post, class: "btn" do %>
                   <span><i class="far fa-3x fa-heart p-2 mr-3 c"></i></span>
                 <% end %>
               <% end %>
-          <% else %>
-            <div class="contenedor-chico d-flex p-2 ">
+
+            <% else %>
               <%= link_to recipe_recipes_favorites_path(@recipe), method: :post, class: "btn" do %>
                 <span><i class="far fa-3x fa-heart p-2 mr-3 c"></i></span>
               <% end %>
-          <% end %>
-            <p class="mb-0"><%= link_to  "volver atras", href="javascript:history.back()", class: 'button-orange', id: 'ver-receta' %></p>
-            </div>
+
+            <% end %>
+
+              <p class="mb-0"><%= link_to  "volver atras", href="javascript:history.back()", class: 'button-orange', id: 'ver-receta' %></p>
           </div>
         </div>
       </div>
