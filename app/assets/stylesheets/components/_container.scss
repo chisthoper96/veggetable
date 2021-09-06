@@ -1,9 +1,9 @@
 .box-sessions {
   display: flex;
   margin: auto;
-  width: 520px;
-  height: 620px;
-  background: #FFFFFF;
+  width: 450px;
+  height: 550px;
+  background-color: #edeeed;
   top: 70%;
   left: 50%;
   position: absolute;
@@ -12,15 +12,14 @@
   padding: 40px 30px;
   border-radius: 50px;
   bottom: -15.79%;
-  box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .box-registrations {
   display: flex;
   margin: auto;
-  width: 520px;
-  height: 620px;
-  background: #FFFFFF;
+  width: 450px;
+  height: 550px;
+  background-color: #edeeed;
   top: 70%;
   left: 50%;
   position: absolute;
@@ -29,5 +28,4 @@
   padding: 40px 30px;
   border-radius: 50px;
   bottom: -15.79%;
-  box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.5);
 }

@@ -1,6 +1,6 @@
 <div class="box-sessions">
   <div class="container">
-    <h2 class="text-center">¿Olvidaste tu contraseña?</h2>
+    <h2 class="text-center">¿Olvidaste tu Contraseña?</h2>
 
 <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
   <%= f.error_notification %>
@@ -14,7 +14,7 @@
       </div>
 
   <div class="form-actions row justify-content-center">
-    <%= f.button :submit, "Enviarme instrucciones para restablecer la contraseña", class:"text-center mt-5" %>
+    <%= f.button :submit, "Enviarme instrucciones restablecer contraseña", class:"text-center mt-5" %>
   </div>
 <% end %>
 
