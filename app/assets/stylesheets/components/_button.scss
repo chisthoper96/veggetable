@@ -3,6 +3,8 @@
   width: 194px;
   background-color: #F58634;
   color: white;
+  border-color: transparent;
+  box-shadow: 2px 2px 3px #8eb3ac;
   font-size: 1rem;
   border-radius: 2rem;
   padding: 15px;
@@ -12,10 +14,11 @@
   font-weight: 600;
   margin-top: 50px;
   margin-bottom: 50px;
+  text-align: center;
 }
 .button-orange:hover {
   background-color: #00AF91;
-  color: #F58634;
+  color: white;
   text-decoration: none;
 }
 
@@ -34,6 +37,7 @@
   font-weight: 600;
   margin-top: 50px;
   margin-bottom: 50px;
+  text-align: center;
   border-style: solid;
   border: initial !important;
   display: flex;
@@ -50,7 +54,7 @@
 
 .button:hover {
   background-color: #00AF91;
-  color: rgb(248, 145, 48);
+  color: white;
   text-decoration: none;
 }
 
@@ -60,6 +64,7 @@
   background: #00AF91;
   text-align: center;
   box-sizing: border-box;
+  box-shadow: 2px 2px 3px #8eb3ac;
   font-size: 1rem;
   border-radius: 2rem;
   padding: 15px;
@@ -74,7 +79,7 @@
 
 .button-green-filled:hover {
   background-color: #F58634;
-  color: #00AF91;
+  color: white;
   text-decoration: none;
 }
 
